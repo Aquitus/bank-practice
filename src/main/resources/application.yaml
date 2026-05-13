@@ -1,0 +1,64 @@
+spring:
+
+  application:
+    name: bank-system
+
+  datasource:
+    url: jdbc:h2:mem:bankdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    defer-datasource-initialization: true
+
+  h2:
+    console:
+      enabled: true
+
+  sql:
+    init:
+      mode: always
+
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: 336788219a48fe
+    password: bc631533a44a58
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
+
+server:
+  port: 8001
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: when-authorized
+
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+
+jwt:
+  secret: MySuperSecretKeyThatIsLongEnough1234567890
