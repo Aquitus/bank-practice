@@ -11,11 +11,13 @@ import java.util.Date;
 @Service
 public class JwtService {
 
-    @Value("${jwt.secret}")
+    @Value("${app.jwt.secret}")
     private String SECRET;
 
     // مدة صلاحية الـ token — ساعة واحدة
     private static final long EXPIRATION_MS = 1000 * 60 * 60 ;
+
+
 
     // توليد token جديد للمستخدم
     public String generateToken(String username) {

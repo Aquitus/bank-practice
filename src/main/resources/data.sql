@@ -1,6 +1,6 @@
 INSERT INTO customers (first_name, last_name, email, username, password, role, enabled, failed_attempts, account_locked)
-VALUES ('Mohammed', 'Ali', 'mohammed@bank.com', 'mohammed',
-        '$2a$10$vDdu4vGbirder9EOWL6U8etM82SzEAagUT2Wb/wKyJ8h/KEGHwFcK',
+VALUES ('John', 'Ali', 'john@bank.com', 'john',
+        '$2a$10$EPIj2hKQlr0bLrLZj7pF3umYbCTfQNv51uKsassZRBBvReaA7l5aS',
         'ROLE_USER', true, 0, false);
 
 INSERT INTO customers (first_name, last_name, email, username, password, role, enabled, failed_attempts, account_locked)
@@ -15,7 +15,7 @@ VALUES ('Khalid', 'Mahmoud', 'khalid@bank.com', 'khalid',
 
 INSERT INTO customers (first_name, last_name, email, username, password, role, enabled, failed_attempts, account_locked)
 VALUES ('Admin', 'User', 'admin@bank.com', 'admin',
-        '$2a$10$7wio0V/J2JIiXv0uUEfJAer3H3oy2vKx0q8af5QuMZItoM1NW4XRq',
+        '$2a$10$EN504Fmwb4qN55e.3M8v9OcnayX4U5PbmjxjlgI/EpWYM5JG9.ppK',
         'ROLE_ADMIN', true, 0, false);
 INSERT INTO customers (first_name, last_name, email, username, password, role, enabled, failed_attempts, account_locked)
 VALUES ('Test', 'User', 'test@bank.com', 'testuser',
